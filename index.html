@@ -4,13 +4,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 
 <style>
+*
+{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
 
+html
+{
+  background-color: #222222;
+  color: white;
+  font-family: jetbrains mono;
+}
+
+::-webkit-scrollbar
+{
+  display: none;
+}
+
+.container
+{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar
+{
+  background-color: #666666;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  .adbar
+  {
+    margin: 0 auto;
+    background-color: #999999;
+    color: #222222;
+    text-align: center;
+    width: 100%;
+  }
+  .navcont
+  {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+  }
+    .navleft
+    {
+      display: flex;
+      justify-content: space-between;
+    }
+      .logo
+      {
+        padding-left: 12px;
+      }
+    .navright
+    {
+      display: flex;
+      justify-content: space-between;
+    }
+      .home, .wincom
+      {
+        padding-right: 36px;
+      }
+      .contact
+      {
+        padding-right: 12px;
+      }
+
+.content
+{
+  margin: 54px 12px 0;
+}
+
+h1
+{
+  font-size: 5vw;
+}
+
+img
+{
+  max-width: 90%;
+  margin-top: 12px;
+  border: 6px solid #333333;
+  border-radius: 30px;
+}
+
+desc
+{
+  margin: 0 auto;
+  padding-top: 12px;
+}
 </style>
 
 <body>
-  WEBSITE UNDER CONSTRUCTION
+  <div class="container">
+    <div class="navbar">
+      <div class="adbar">
+        all the ads will be displayed here
+      </div>
+      <div class="navcont">
+        <div class="navleft">
+          <div class="logo">
+            Logo
+          </div>
+        </div>
+        <div class="navright">
+          <div class="home">
+            HOME
+          </div>
+          <div class="wincom">
+            WINCOM
+          </div>
+          <div class="contact">
+            CONTACT
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="desc">
+      <h1>
+        <div>AIM PRECISION GAMING MOUSEPAD</div>
+      </h1>
+      <div>🏷️ price - TK 1200</div>
+      <div>🌈 color - Black & White</div>
+      <div>🔧 matts - Non Slip Rubber</div>
+      <div>📏 sizes - L 90.00_cm | B 40.00_cm | H 00.30_cm</div>
+    </div>
+    <div class="image">
+      <img src="aim-precision-gaming-mousepad-1.jpg" alt="picture-1">
+      <img src="aim-precision-gaming-mousepad-2.jpg" alt="picture-2">
+      <img src="aim-precision-gaming-mousepad-3.jpg" alt="picture-3">
+    </div>
+  </div>
 </body>
 </html>
