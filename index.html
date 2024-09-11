@@ -3,148 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Wedgefort</title>
+  <!-- fontImport jetbrains mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-</head>
-
+  <!-- fontImport marvel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!-- default CSS -->
 <style>
-*
+html, body
 {
-  margin: 0;
+  margin: 0 auto;
   border: 0;
   padding: 0;
-}
-
-html
-{
-  background-color: #222222;
-  color: white;
-  font-family: jetbrains mono;
-}
-
-::-webkit-scrollbar
-{
-  display: none;
-}
-
-.container
-{
-  margin: 0 auto;
-  text-align: center;
-}
-
-.navbar
-{
-  background-color: #666666;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-  .adbar
-  {
-    margin: 0 auto;
-    background-color: #999999;
-    color: #222222;
-    text-align: center;
-    width: 100%;
-  }
-  .navcont
-  {
-    display: flex;
-    justify-content: space-between;
-    margin: 6px 0;
-  }
-    .navleft
-    {
-      display: flex;
-      justify-content: space-between;
-    }
-      .logo
-      {
-        padding-left: 12px;
-      }
-    .navright
-    {
-      display: flex;
-      justify-content: space-between;
-    }
-      .home, .wincom
-      {
-        padding-right: 36px;
-      }
-      .contact
-      {
-        padding-right: 12px;
-      }
-
-.content
-{
-  margin: 54px 12px 0;
-}
-
-h1
-{
-  font-size: 5vw;
-}
-
-img
-{
-  max-width: 90%;
-  margin-top: 12px;
-  border: 6px solid #333333;
-  border-radius: 30px;
-}
-
-desc
-{
-  margin: 0 auto;
-  padding-top: 12px;
+  font-family: Jetbrains Mono, Monospace;
+  background-color: rgb(60, 60, 60);
 }
 </style>
+</head>
 
 <body>
-  <div class="container">
-    <div class="navbar">
-      <div class="adbar">
-        all the ads will be displayed here
+  <div
+    class="container"
+  >
+    <div
+      class="navbar"
+      style="
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+    ">
+      <div
+        class="adbar"
+        style="
+          display: grid;
+          height: 36px;
+          background: linear-gradient(to right, #FFD7A6, #FDFFB6, #CBFFBF, #9CF6FF, #A0C4FF, #BDB2FF, #FFC6FF);
+          font-weight: bold;
+          align-items: center;
+          text-align: center;
+      ">
+        <div>
+          All Company Updates & Advertisements will be displayed here
+        </div>
       </div>
-      <div class="navcont">
-        <div class="navleft">
-          <div class="logo">
-            Logo
+      <div
+        class="navbar-cont"
+        style="
+          padding: 0 36px;
+          display: flex;
+          justify-content: space-between;
+          color: whitesmoke;
+          background-color: rgb(30, 30, 30);
+          align-items: center;
+          height: 72px;
+      ">
+          <div
+            class="cont-c1"
+          >
+              LOGO
           </div>
-        </div>
-        <div class="navright">
-          <div class="home">
-            HOME
+          <div
+            class="cont-c2"
+            style="
+              display: flex;
+              justify-content: space-between;
+          ">
+            <div
+              style="padding-right: 1vw;"
+            >
+              WINCOM
+            </div>
+            <div
+              style="padding-right: 1vw;"
+            >
+              CONTACT
+            </div>
           </div>
-          <div class="wincom">
-            WINCOM
-          </div>
-          <div class="contact">
-            CONTACT
-          </div>
-        </div>
+      </div>
     </div>
-  </div>
-  <div class="content">
-    <div class="desc">
-      <h1>
-        <div>AIM PRECISION GAMING MOUSEPAD</div>
-      </h1>
-      <div>🏷️ price - TK 1200</div>
-      <div>🌈 color - Black & White</div>
-      <div>🔧 matts - Non Slip Rubber</div>
-      <div>📏 sizes - L 90.00_cm | B 40.00_cm | H 00.30_cm</div>
+    <div
+      class="header"
+      style="
+        height: 108px;
+    ">
+
     </div>
-    <div class="image">
-      <img src="aim-precision-gaming-mousepad-1.jpg" alt="picture-1">
-      <img src="aim-precision-gaming-mousepad-2.jpg" alt="picture-2">
-      <img src="aim-precision-gaming-mousepad-3.jpg" alt="picture-3">
+    <div
+      class="b1"
+      style="
+      padding: 12vh 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgb(60, 60, 60);
+      background-image: url(https://images4.alphacoders.com/134/1341419.png);
+      background-position: 0 50%;
+    ">
+      <div
+      style="
+        display: grid;
+        font-family: Jetbrains Mono;
+        font-size: 12vw;
+        color: whitesmoke;
+        paint-order: stroke fill;
+        background: linear-gradient(to right, #FFD7A6, #FDFFB6, #CBFFBF, #9CF6FF, #A0C4FF, #BDB2FF, #FFC6FF);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+        align-items: center;
+      ">
+        WEDGEFORT
+      </div>
+      <div
+        style="
+          font-size: 6vw;
+          color: whitesmoke;
+          background: linear-gradient(to left, #FFD7A6, #FDFFB6, #CBFFBF, #9CF6FF, #A0C4FF, #BDB2FF, #FFC6FF);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          text-align: center;
+          align-items: center;
+      ">
+        Inventing Tomorrow, Today
+      </div>
     </div>
-  </div>
+    <div
+      class="b2"
+      style="
+      display: grid;
+      color: whitesmoke;
+      background-color: rgb(30, 30, 30);
+      height: 300px;
+      align-items: center;
+    ">
+      <div
+        style="
+          text-align: center;
+      ">
+        hi this is another box
+      </div>
+    </div>
+    <div
+      class="b3"
+      style="
+      display: grid;
+      color: whitesmoke;
+      background-color: rgb(60, 60, 60);
+      height: 300px;
+      align-items: center;
+    ">
+      <div
+        style="
+          text-align: center;
+      ">
+        and this is another box
+      </div>
+    </div>
+    <div
+      class="b4"
+      style="
+      display: grid;
+      color: whitesmoke;
+      background-color: rgb(30, 30, 30);
+      height: 300px;
+      align-items: center;
+    ">
+      <div
+        style="
+          text-align: center;
+      ">
+        and another box
+      </div>
+    </div>
+  </div>  
 </body>
 </html>
