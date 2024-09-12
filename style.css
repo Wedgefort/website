@@ -12,8 +12,8 @@ html, body
 {
   width: fit-content;
   margin: 0;
-  border: 0;
-  border-radius: 36px;
+  border-left: 6px solid cyan;
+  border-radius: 6px;
   padding: 6px 12px;
   background-color: black;
 }
