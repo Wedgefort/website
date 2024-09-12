@@ -1,0 +1,153 @@
+html, body
+{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: Jetbrains Mono, Monospace;
+  background-color: rgb(60, 60, 60);
+}
+
+/* highlighter-divs */
+.h1
+{
+  width: fit-content;
+  margin: 0;
+  border: 0;
+  border-radius: 36px;
+  padding: 6px 12px;
+  background-color: black;
+}
+
+.container
+{
+  background-color: rgb(30, 30, 30);
+}
+  .navbar
+  {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+    .adbar
+    {
+      align-items: center;
+      background: linear-gradient(to right, indigo, blue, green, yellow, orange, red);
+      height: 24px;
+    }
+      .adbar div
+      {
+        font-size: 13pt;
+        display: grid;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-weight: bolder;
+        background: linear-gradient( to right, white, black);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+    .navbar-cont
+    {
+      display: flex;
+      height: auto;
+      background-color: violet;
+      justify-content: space-between;
+      align-items: center;
+      height: 36px;
+    }
+      .navcont-c1
+      {
+        display: flex;
+        font-size: 2rem;
+      }
+        .navcont-c1 div
+        {
+          padding-left: 1vw;
+        }
+      .navcont-c2
+      {
+        display: flex;
+        font-size: 2rem;
+      }
+        .navcont-c2 div
+        {
+          padding-right: 1vw;
+        }
+  .header
+  {
+    height: 60px;
+  }
+  .b1
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 36px;
+    height: 300px;
+    background-color: rgb(36, 36, 36);
+  }
+    .b1 div
+    {
+      color: whitesmoke;
+      font-size: 60pt;
+      text-align: center;
+    }
+  .b2
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 36px;
+    height: 300px;
+    background-color: rgb(42, 42, 42);
+  }
+    .b2 div
+    {
+      color: whitesmoke;
+      font-size: 15pt;
+    }
+  .b3
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 36px;
+    height: 300px;
+    background-color: rgb(36, 36, 36);
+  }
+    .b3 div
+    {
+      color: whitesmoke;
+      font-size: 15pt;
+    }
+  .b4
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 36px;
+    height: 300px;
+    background-color: rgb(42, 42, 42);
+  }
+    .b4 div
+    {
+      color: whitesmoke;
+      font-size: 15pt;
+    }
+  .footer
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 36px;
+    height: 100px;
+    background-color: rgb(36, 36, 36);
+  }
+    .footer div
+    {
+      color: whitesmoke;
+      font-size: 60pt;
+      text-align: center;
+    }
