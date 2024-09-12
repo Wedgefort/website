@@ -62,6 +62,11 @@ html, body
         display: flex;
         font-size: 2rem;
       }
+        .navcont-c1 img
+        {
+          width: 24px;
+          height: auto;
+        }
         .navcont-c1 div
         {
           padding-left: 1vw;
