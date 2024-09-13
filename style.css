@@ -44,7 +44,7 @@ html, body
         text-align: center;
         align-items: center;
         font-weight: bolder;
-        background: linear-gradient( to right, white, black);
+        background: linear-gradient( to right, white, white, red, black);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
       }
@@ -147,7 +147,7 @@ html, body
     flex-direction: column;
     justify-content: space-around;
     padding: 36px;
-    height: 100px;
+    height: auto;
     background-color: rgb(36, 36, 36);
   }
     .footer div
