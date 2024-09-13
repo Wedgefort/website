@@ -3,124 +3,149 @@ html, body
   margin: 0;
   border: 0;
   padding: 0;
-  font-family: Jetbrains Mono, Monospace;
+  font-family: jetbrains mono, Monospace;
   background-color: rgb(60, 60, 60);
-}
-
-/* highlighter-divs */
-.comment
-{
-  width: fit-content;
-  margin: 0;
-  border-left: 6px solid cyan;
-  border-radius: 6px;
-  padding: 6px 12px;
-  background-color: black;
+  max-width: 1440px;
+  min-width: 720px;
 }
 
 .container
 {
-  background-color: rgb(30, 30, 30);
+  background-color: whitesmoke;
+  max-width: 1920px;
+  min-width: 1080px;
+  margin: 0 auto;
 }
   .navbar
   {
+    font-family: suse, monospace;
     margin: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 1;
     width: 100%;
     height: auto;
   }
     .adbar
     {
       align-items: center;
-      background: linear-gradient(to right, indigo, blue, green, yellow, orange, red);
-      height: 24px;
+      background: linear-gradient(to right, #ffc6ff, #bdb2ff, #a0c4ff, #9bf6ff, #caffbf, #fdffb6, #ffd6a5);
+      height: 6vh;
     }
-      .adbar div
+      .adbar .subtitle
       {
-        font-size: 13pt;
+        font-family: jetbrains mono, monospace;
         display: grid;
-        flex-direction: column;
+        height: 5vh;
+        background-color: rgba(30, 30, 30, 1);
+        color: whitesmoke;
+        font-size: 1em;
         text-align: center;
         align-items: center;
-        font-weight: bolder;
-        background: linear-gradient( to right, white, white, red, black);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-      }
+        }
     .navbar-cont
     {
       display: flex;
       height: auto;
-      background-color: violet;
+      background-color: rgba(18, 18, 18, 1);
+      color: whitesmoke;
       justify-content: space-between;
       align-items: center;
-      height: 36px;
+      height: 7vh;
+      box-shadow: 0 1vh 2vh 0.1vh rgba(30, 30, 30, 0.6);
     }
       .navcont-c1
       {
         display: flex;
-        font-size: 2rem;
+        align-items: center;
       }
         .navcont-c1 img
         {
-          width: 24px;
+          display: grid;
+          align-items: center;
+          width: 32px;
           height: auto;
         }
         .navcont-c1 div
         {
-          padding-left: 1vw;
+          padding-left: 3vw;
         }
       .navcont-c2
       {
         display: flex;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
         .navcont-c2 div
         {
-          padding-right: 1vw;
+          padding-right: 3vw;
         }
   .header
   {
-    height: 60px;
+    display: grid;
+    height: 13vh;
+    background-color: whitesmoke;
+    color: rgba(30, 30, 30, 1);
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
   }
   .b1
   {
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 36px;
-    height: 300px;
+    height: 72vh;
+    background-image: url(bg-image.jpg);
+    background-size: cover;
+    background-position: 0 5%;
     background-color: rgb(36, 36, 36);
   }
     .b1 div
     {
       color: whitesmoke;
-      font-size: 60pt;
       text-align: center;
     }
+      .b1h
+      {
+        font-size: 10rem;
+        background: linear-gradient(to bottom, #ffc6ff, #bdb2ff, #a0c4ff, #9bf6ff, #caffbf, #fdffb6, #ffadad);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
   .b2
   {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0 36px;
-    height: 300px;
-    background-color: rgb(42, 42, 42);
+    border-top: 6px solid #fdffb6;
+    display: block;
+    background-color: #a0c4ff;
+    padding: 3vw;
   }
-    .b2 div
+    .b2b
     {
-      color: whitesmoke;
-      font-size: 15pt;
+      display: flex;
     }
+      .b2b1
+      {
+        width: 50%;
+        text-align: center;
+        font-size: 4.8rem;
+        padding: 0 3vw;
+      }
+        .b2b1-top
+        {
+          font-size: 1rem;
+          color: whitesmoke;
+        }
+      .b2b2
+      {
+        width: 50%;
+        font-size: 1rem;
+      }
   .b3
   {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0 36px;
-    height: 300px;
-    background-color: rgb(36, 36, 36);
+    border-top: 6px solid #fdffb6;
+    background-color: #bdb2ff;
   }
     .b3 div
     {
