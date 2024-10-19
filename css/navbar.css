@@ -1,0 +1,120 @@
+.nav
+{
+	background-color: #181C14;
+  color: #ECDFCC;
+  font-family: Jetbrains Mono, Monospace;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+  
+  font-size: 15pt;
+  height: 3em;
+}
+	.Lpanel
+	{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+	}
+    .Lpanel div
+    {
+      width: 4em;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      transition: background-color 0.25s;
+    }
+      .Lpanel div:hover
+      {
+        background-color: black;
+      }
+    .Lpanel img
+    {
+      width: 60%;
+    }
+
+
+  .Rpanel
+  {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+    .Rpanel div
+    {
+      width: 9em;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      transition: background-color 0.25s;
+    }
+      .Rpanel div:hover
+      {
+        background-color: black;
+      }
+    .Rpanel .portfolio img
+    {
+      height: 30%;
+    }
+    .Rpanel a
+    {
+    text-decoration: none;
+    }
+
+@media screen and (max-width: 640px)
+{
+  .nav
+  {
+    font-size: 10pt;
+    height: 2em;
+  }
+    .Lpanel div
+    {
+      width: 3em;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .Rpanel div
+    {
+      width: 6em;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+  .nav
+  {
+    height: 2em;
+  }
+    .Lpanel div
+    {
+      width: 2em;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .Rpanel div
+    {
+      width: 6em;
+      font-size: 9pt;
+    }
+}
