@@ -68,6 +68,7 @@ body, html
     }
       .contact
       {
+        box-sizing: border-box;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -76,19 +77,11 @@ body, html
 
         background-color: #1E201E;
       }
-        .contact a
-        {
-          text-decoration: none;
-          color: white;
-        }
         .contact img
         {
           max-width: 30px;
-          background-color: white;
-          padding: 0.30em;
-          border-radius: 30px;
         }
-          .contact .phone, .contact .mail-us
+          .phone, .mail
           {
             display: flex;
             flex-direction: column;
@@ -97,38 +90,35 @@ body, html
 
             position: relative;
           }
-            .contact .phone .tooltip
+            .phone a div, .mail a div
             {
-              position: absolute;
-              font-size: 11pt;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 60px;
+              width: 60px;
               background-color: white;
-              color: #1E201E;
-              border-radius: 1em;
-              padding: 1em;
-              bottom: -3em;
-              left: -3em;
+              border-radius: 60px;
+            }
+              .phone .tooltip, .mail .tooltip
+              {
+                box-sizing: border-box;
+                background-color: white;
+                color: #1E201E;
+                font-size: 11pt;
+                padding: 1em;
+                border-radius: 1em;
 
-              opacity: 0;
-              transition: opacity 0.30s;
-            }
-            .contact .mail-us .tooltip
-            {
-              position: absolute;
-              font-size: 11pt;
-              background-color: white;
-              color: #1E201E;
-              border-radius: 1em;
-              padding: 1em;
-              bottom: -3em;
-              left: -4em;
+                position: absolute;
+                bottom: -4em;
 
-              opacity: 0;
-              transition: opacity 0.30s;
-            }
-            .contact .phone:hover .tooltip, .contact .mail-us:hover .tooltip
-            {
-              opacity: 1;
-            }
+                opacity: 0;
+                transition: opacity 0.30s;
+              }
+              .phone:hover .tooltip, .mail:hover .tooltip
+              {
+                opacity: 1;
+              }
 
     .footer
     {
@@ -136,7 +126,7 @@ body, html
       font-size: 11pt;
       text-align: right;
       color: white;
-      padding-right: 2em;
+      padding-right: 1em;
     }
 
 @media screen and (max-width: 1000px) {
@@ -194,8 +184,12 @@ body, html
     padding: 2em;
     max-width: 150px;
   }
-  .main-title
-  {
-    font-size: 1rem;
-  }
+    .main-title
+    {
+      font-size: 1rem;
+    }
+    .footer
+    {
+      font-size: 0.6rem;
+    }
 }
