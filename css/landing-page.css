@@ -168,13 +168,21 @@ body, html
       padding: 0 2em;
 
       text-align: center;
+      font-size: 2em;
     }
 }
 
 @media screen and (max-width: 710px) {
   .main-title
   {
-    font-size: 2rem;
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .main-title
+  {
+    font-size: 1.5rem;
   }
 }
 
