@@ -7,9 +7,11 @@
   font-family: Jetbrains Mono, Monospace;
 }
 
-body
+body, html
 {
-  margin: 0 auto;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 .under-construction
@@ -19,7 +21,7 @@ body
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  
+
   margin: 0 auto;
   border: 0;
   padding: 0;
@@ -63,7 +65,7 @@ body
 
       height: 100%;
       text-align: center;
-      font-size: 36pt;
+      font-size: 3em;
       color: white;
     }
       .contact
@@ -128,3 +130,54 @@ body
     }
 
 /* screen optimizations */
+
+@media screen and (max-width: 1079px) {
+  .under-construction
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .container
+    {
+      width: 100%;
+    }
+    .main-title
+    {
+      font-size: 2em;
+      gap: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .main-title
+  {
+    font-size: clamp(1em, 2em, 2em);
+  }
+    .contact img
+    {
+      max-width: 24px;
+    }
+      .phone a div, .mail a div
+      {
+        height: 42px;
+        width: 42px;
+        background-color: white;
+        border-radius: 42px;
+      }
+          .phone .tooltip, .mail .tooltip
+          {
+            font-size: 9pt;
+            padding: 0.6em;
+            border-radius: 1em;
+            bottom: -3em;
+          }
+}
+    
+@media screen and (max-width: 473px) {
+  .logo img
+  {
+    max-width: 240px;
+  }
+}
